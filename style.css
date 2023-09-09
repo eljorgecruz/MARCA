@@ -1,0 +1,15 @@
+.card:hover h2.card-text {
+  color: grey; /* Cambia el color de texto al pasar el cursor sobre la tarjeta */
+}
+
+.categoria{
+  color: red;
+}
+
+.card {
+  border: none; /* Elimina los bordes de la tarjeta */
+}
+
+.color-dif{
+  background-color: rgb(219, 218, 209);
+}
