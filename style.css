@@ -41,3 +41,14 @@
 .social-buttons {
   text-align: center; /* Centra los botones horizontalmente */
 }
+
+#adlateral1{
+  display: block;
+  position: fixed;
+  width: 160px;
+  height: 600px;
+  top: 180px;
+  left: 0px;
+  border:1px solid #eee;
+  z-index: 99;
+}
