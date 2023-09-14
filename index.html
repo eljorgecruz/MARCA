@@ -7,12 +7,178 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d4ba8b91ae.js" crossorigin="anonymous"></script>
+    <!-- Icono -->
+    <link rel="icon" href="/images/marca-logo.png">
+    <!-- Css -->
     <link rel="stylesheet" href="style.css">
-    <title>Marca</title>
+    <title>MARCA Méxco - Diario online líder en información deportivae</title>
   </head>
   <body>
+
+    <!-- Es noticia (Sección) -->
+    <div class="d-none d-xl-block">
+      <div class="div-ul">
+        <ul class="mi-ul">
+          <li>
+            <span>Es noticia:</span>
+          </li>
+          <li>
+            <a href="#">Argentina vs Ecuador</a>
+          </li>
+          <li>
+            <a href="#">Brasil vs Chile</a>
+          </li>
+          <li>
+            <a href="#">Kansas vs Detroit</a>
+          </li>
+          <li>
+            <a href="#">NFL</a>
+          </li>
+          <li>
+            <a href="#">Juan Gabriel</a>
+          </li>
+          <li>
+            <a href="#">Checo Pérez</a>
+          </li>
+          <li>
+            <a href="#">Serie del Rey LMB 2023</a>
+          </li>
+          <li>
+            <a href="#">Ganador encuesta Morena</a>
+          </li>
+          <li>
+            <a href="#">León Tiktok</a>
+          </li>
+          <li>
+            <a href="#">Independencia de México</a>
+          </li>
+          <li>
+            <a href="#">Marcelo Ebrard</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Container principal Logos y Botones -->
+<div class="d-flex justify-content-between">
+  <!-- Container Logos -->
+  <div class="d-flex gap-3">
+    <div class=""> <!-- Radio MARCA Logo -->
+      <img class="logo-pequeño" src="/images/radio-marca.png" alt="RadioMarca Logo">
+      <strong class="small">Radio MARCA</strong>
+    </div>
+    <div class=""> <!-- CuidatePlus Logo -->
+      <img class="logo-pequeño" src="/images/favicon_0_0.ico" alt="CuidatePlus Logo">
+      <strong class="small">CuidatePlus</strong>
+    </div>
+    <div class=""> <!-- Lo+Trending Logo -->
+      <img class="logo-pequeño" src="/images/lo+trending.png" alt="Lo+Trending Logo">
+      <strong class="small">Lo + trending</strong>
+    </div>
+  </div>
+
+  <!-- Logo Principal -->
+  <div class="text-center">
+    <a href="#">
+      <img class="marca-logo" src="/images/Marca_logo_logotype.png" alt="Marca Logo">
+    </a>
+  </div>
+
+  <!-- Botones a la Derecha -->
+  <div class="d-flex gap-2">
+    <div class="mx-button dropdown">
+      <button class="btn btn-outline-secondary dropdown-toggle custom-flag" type="button" id="countryDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="flag-icon"></span> <!-- Contenedor para la bandera -->
+        MX <!-- Texto del país -->
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="countryDropdown">
+        <li><a class="dropdown-item" href="#">MX - México</a></li>
+        <li><a class="dropdown-item" href="#">US - Estados Unidos</a></li>
+        <li><a class="dropdown-item" href="#">CA - Canadá</a></li>
+        <!-- Agrega más países según sea necesario -->
+      </ul>                    
+    </div>    
+    <div class="login-button">
+      <button class="btn btn-outline-danger">Iniciar sesión</button>
+    </div>
+  </div>
+</div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg bg-danger navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
     <div class="container">
+      <!-- resultados partidos -->
+      <div class="border border-10px">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <h2 class="text-center">Resultados</h2>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center">
+                <div class="col-md-3 text-center">
+                  <img src="images/resultado1.png" class="d-block mx-auto" alt="...">
+                </div>
+                <div class="col-md-3 text-center">
+                  <img src="images/resultado2.png" class="d-block mx-auto" alt="...">
+                </div>
+                <div class="col-md-3 text-center">
+                  <img src="images/resultado3.png" class="d-block mx-auto" alt="...">
+                </div>
+                <div class="col-md-3 text-center">
+                  <img src="images/resultado4.png" class="d-block mx-auto" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <div class="col-md-3 text-center">
+                  <img src="images/resultado5.png" class="d-block mx-auto" alt="...">
+                </div>
+                <!-- Puedes agregar más imágenes aquí -->
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: darkgray;"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: darkgray;"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      
+      
+      
+
+
+
       <!-- clase gutter -->
       <div class="row">
         <div class="col-md-8">
@@ -62,6 +228,7 @@
               </div>
             </div>
           </div>
+          <hr>
           <!-- grupo de noticias -->
           <div class="row g-0">
             <div class="col-sm-6 col-md-4">
@@ -132,8 +299,8 @@
           <div class="container">
             <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
               <div class="col">
-                <div class="p-3 border bg-light">
-                  <div class="card mb-4">
+                <div class="p-3 border bg-light h-100">
+                  <div class="card mb-4 h-100">
                     <img src="https://phantom-marca-mx.unidadeditorial.es/240920044ad141a8b4733bc511e7864d/resize/660/f/webp/mx/assets/multimedia/imagenes/2023/09/09/16942777442106.jpg" alt="...">
                     <div class="card-body">
                       <small class="categoria">TENIS</small>
@@ -144,8 +311,8 @@
                 </div>
               </div>
               <div class="col">
-                <div class="p-3 border bg-light">
-                  <div class="card mb-4">
+                <div class="p-3 border bg-light h-100">
+                  <div class="card mb-4 h-100">
                     <img src="https://phantom-marca-mx.unidadeditorial.es/13c261eb2875b0b3e16722fe8eb9a248/resize/208/f/webp/mx/assets/multimedia/imagenes/2023/09/09/16942222989747.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <small class="categoria">MEXICANOS POR EL MUNDO</small>
@@ -156,8 +323,8 @@
                 </div>
               </div>
               <div class="col">
-                <div class="p-3 border bg-light">
-                  <div class="card mb-4">
+                <div class="p-3 border bg-light h-100">
+                  <div class="card mb-4 h-100">
                     <img src="https://phantom-marca-mx.unidadeditorial.es/4fdaee83b0516719041ff103cff155d3/resize/208/f/webp/mx/assets/multimedia/imagenes/2023/09/09/16942300747556.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <small class="categoria">FÚTBOL</small>
@@ -168,8 +335,8 @@
                 </div>
               </div>
               <div class="col">
-                <div class="p-3 border bg-light">
-                  <div class="card mb-4">
+                <div class="p-3 border bg-light h-100">
+                  <div class="card mb-4 h-100">
                     <img src="https://phantom-marca-mx.unidadeditorial.es/7b9ee19e53df5051351050544eed621c/resize/118/f/webp/mx/assets/multimedia/imagenes/2023/09/09/16942146104212.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <small class="categoria">SELECCIÓN NACIONAL DE MÉXICO</small>
@@ -180,8 +347,8 @@
                 </div>
               </div>
               <div class="col">
-                <div class="p-3 border bg-light">
-                  <div class="card mb-4">
+                <div class="p-3 border bg-light h-100">
+                  <div class="card mb-4 h-100">
                     <img src="https://phantom-marca-mx.unidadeditorial.es/6eaa7310ab3581e858c5fb773e67d5d0/resize/235/f/webp/mx/assets/multimedia/imagenes/2023/09/09/16942162085893.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <small class="categoria">CRUZ AZUL</small>
@@ -192,8 +359,8 @@
                 </div>
               </div>
               <div class="col">
-                <div class="p-3 border bg-light">
-                  <div class="card mb-4">
+                <div class="p-3 border bg-light h-100">
+                  <div class="card mb-4 h-100">
                     <img src="https://phantom-marca-mx.unidadeditorial.es/011664018244b634d6515fcb9f95df9c/resize/152/f/webp/mx/assets/multimedia/imagenes/2023/09/09/16942218211368.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <small class="categoria">URUGUAY 3-1 CHILE</small>
@@ -223,41 +390,34 @@
         <img src="https://www.ims360group.com/wp-content/uploads/2020/02/160_x_600-1.gif" alt="">
       </div>
 
+    </div>
+
+    
 
       <!-- footer -->
-      <footer class="py-3 my-4 bg-light">
-        <span class="justify-content-center">© Septiembre 2023 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados.</span>
+      <footer class="py-3 my-4 bg-light text-center">
+        <span>© Septiembre 2023 Unidad Editorial Información Deportiva, S.L.U. Todos los derechos reservados.</span>
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Politica de cookies</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Configuracion de cookies</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Politica de privacidad</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Terminos y condiciones de uso</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Certificado por OJD</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Publicidad</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Ayuda</a></li>
+          <!-- Tus elementos nav -->
         </ul>
-        
-
-        <div class="container text-center">
+      
+        <div class="container mt-4">
           <h3>Síguenos en redes sociales</h3>
           <div class="mt-3">
-              <a class="btn btn-lg btn-floating mx-2" style="background-color: #4132c9;" href="#!" role="button">
-                  <i class="fab fa-facebook-f" style="color: #3b5998;"></i>
-              </a>
-              <a class="btn btn-lg btn-floating mx-2" style="background-color: #3a88e2;" href="#!" role="button">
-                  <i class="fab fa-twitter" style="color: #55acee;"></i>
-              </a>
-              <a class="btn btn-lg btn-floating mx-2" style="background-color: #ac2bac;" href="#!" role="button">
-                  <i class="fab fa-instagram"></i>
-              </a>
+            <a class="btn btn-lg btn-floating mx-2 rounded-circle" style="background-color: #4132c9;" href="#!" role="button">
+              <i class="fab fa-facebook-f" style="color: #3b5998;"></i>
+            </a>
+            <a class="btn btn-lg btn-floating mx-2 rounded-circle" style="background-color: #3a88e2;" href="#!" role="button">
+              <i class="fab fa-twitter" style="color: #55acee;"></i>
+            </a>
+            <a class="btn btn-lg btn-floating mx-2 rounded-circle" style="background-color: #ac2bac;" href="#!" role="button">
+              <i class="fab fa-instagram"></i>
+            </a>
           </div>
-      </div>
-        
+        </div>
       </footer>
 
       
-    </div>
 
     
 
