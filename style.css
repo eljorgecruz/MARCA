@@ -4,6 +4,30 @@
   box-sizing: border-box;
 }
 
+.main-navbar {
+  display: flex;
+  background-color: rgb(204, 0, 0);
+}
+
+.main-navbar div ul {
+  display: flex;
+}
+
+.main-navbar ul li {
+  list-style: none;
+  margin: 5px 7px;
+}
+
+.main-navbar div ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.main-navbar ul li a:hover {
+  background-color: #191c24;
+}
+
 .card:hover h2.card-text {
   color: grey; /* Cambia el color de texto al pasar el cursor sobre la tarjeta */
 }
@@ -20,11 +44,6 @@
     background-color: rgb(219, 218, 209);
   }
 
-  .main-nav-container {
-    display: flex;
-    flex-direction: row;
-  }
-
   /* Estilo base para los botones sociales */
   .social-button {
     display: inline-block;
@@ -36,7 +55,7 @@
 
   /* Estilo para las imágenes dentro de los botones */
   .social-button img {
-    width: 50px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    width: 50px;
     height: 50px;
     display: block;
   }
@@ -50,7 +69,7 @@
 
   /* Estilo para el contenedor de botones sociales */
   .social-buttons {
-    text-align: center; /* Centra los botones horizontalmente */
+    text-align: center;
   }
 
 .div-ul {
@@ -90,27 +109,6 @@
   max-width: 200px;
 }
 
-#adlateral2{
-  display: block;
-      position: fixed;
-      width: 160px;
-      height: 600px;
-      top: 180px;
-      right: 0px;
-      border:1px solid #eee;
-      z-index: 99;
-}
-
-#adlateral1{
-  display: block;
-  position: fixed;
-  width: 160px;
-  height: 600px;
-  top: 180px;
-  left: 0px;
-  border:1px solid #eee;
-  z-index: 99;
-}
 .logo-pequeño {
   height: 3rem;
   max-width: 80px;
@@ -136,11 +134,11 @@
   /* Mostrar el menú desplegable en hover */
   .navbar-nav .nav-item:hover .nav-link {
     background-color: black;
-    color: white; /* Cambia el color de fondo en hover si lo deseas */
+    color: white;
   }
   
   .navbar-nav .nav-item .nav-link {
-    transition: background-color 0.3s ease; /* Agrega una transición suave para el color de fondo */
+    transition: background-color 0.3s ease;
   }
   
   /* Estilos para el menú desplegable */
@@ -151,24 +149,24 @@
   }
   
   .navbar-nav .nav-item:hover .dropdown-menu {
-    display: block; /* Mostrar el menú desplegable en hover */
+    display: block;
   }
 
 .custom-flag {
     display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
-    padding: 5px 4px; /* Ajusta el espaciado según sea necesario */
-    cursor: pointer; /* Cambia el cursor al estilo de enlace */
+    align-items: center;
+    padding: 5px 4px;
+    cursor: pointer;
 }
   
 .flag-icon {
   background-image: url('./images/mexico.png'); /* Ruta de tu imagen de bandera de México */
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: left center; /* Coloca la bandera a la izquierda */
-    width: 30px; /* Ajusta el ancho según el tamaño de tu imagen */
-    height: 20px; /* Ajusta la altura según el tamaño de tu imagen */
-    margin-right: 1px; /* Espaciado entre la bandera y el texto */
+    background-position: left center;
+    width: 30px;
+    height: 20px;
+    margin-right: 1px;
 }
   
   /* Desactivar el hover en el botón "MX" */
@@ -179,12 +177,20 @@
 
 /* Cambiar el estilo de fondo y color de texto en hover para el botón "Iniciar sesión" */
 .login-button .btn:hover {
-  background-color: black; /* Cambia el fondo a negro en hover */
-  border: 2px solid black; /* Añade un borde negro en hover */
-  color: white; /* Cambia el color de texto a blanco en hover */
+  background-color: black;
+  border: 2px solid black;
+  color: white;
 }
 
+/* Estilos para la barra de navegación */
+.navbar {
+  height: 44px;
+}
 
+/* Estilos para los elementos li */
+.navbar-nav .nav-item {
+  height: 44px;
+}
 
 .custom-carousel-btn span.carousel-control-prev-icon,
 .custom-carousel-btn span.carousel-control-next-icon {
@@ -207,3 +213,67 @@
 /* Estilos para el contenedor del anuncio */
 
                  
+=======
+.navbar-nav .nav-item:hover a.nav-link {
+  font-size: 18px;
+  background-color: #191c24;
+  color: white;
+}
+
+/* Restaurar estilos al hacer hover en otros elementos */
+.navbar-nav .nav-item:not(:hover) a.nav-link {
+  font-size: inherit;
+  background-color: transparent;
+  color: inherit;
+}
+
+/* Estilos para el menú desplegable */
+.navbar-nav .nav-item .dropdown-menu {
+  display: none; /* Ocultar el menú desplegable por defecto */
+  position: absolute;
+  background-color: rgba(20, 29, 37, .97);
+  width: 900px; /* Ancho personalizado */
+  height: 550px; /* Alto personalizado */
+  padding: 20px; /* Espaciado personalizado */
+  position: fixed; /* Mantener fijo el menú desplegable */
+  left: 9%; /* Alinea el menú a la izquierda */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Mostrar el menú desplegable en hover */
+.navbar-nav .nav-item:hover .dropdown-menu,
+.navbar-nav .nav-item .dropdown-menu:focus {
+  display: block;
+}
+
+
+.title-dropdown {
+  color: #5d6d7e;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.tab-list-content, .tab-list-content ul, .tab-list-content ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+.tab-list-header {
+  margin: 5px 0;
+}
+
+.tab-list-link {
+  font-size: 13px;
+  color: #aeb6bf !important;
+  margin-bottom: 3px;
+}
+
+.tab-list li a:hover, .tab-list li ul li a:hover {
+  color: red !important;
+  background-color: transparent;
+}
