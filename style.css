@@ -184,3 +184,26 @@
   color: white; /* Cambia el color de texto a blanco en hover */
 }
 
+
+
+.custom-carousel-btn span.carousel-control-prev-icon,
+.custom-carousel-btn span.carousel-control-next-icon {
+  background-color: transparent; /* Para eliminar el fondo gris original */
+  color: white; /* Cambiar el color del icono (flecha) a blanco */
+}
+
+/* Estilos personalizados para el carrusel */
+.custom-carousel {
+  max-width: 70%; /* Ajusta el ancho del carrusel según tu preferencia */
+  margin: 0 auto; /* Centra el carrusel en su contenedor */
+}
+
+/* Estilos personalizados para las imágenes dentro del carrusel */
+.custom-img {
+  max-width: 100%; /* Ajusta el ancho máximo de las imágenes al tamaño deseado */
+  height: auto; /* Mantén la proporción de aspecto */
+}
+
+/* Estilos para el contenedor del anuncio */
+
+                 
