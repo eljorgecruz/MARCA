@@ -1,3 +1,15 @@
+/* Importar los estilos de la fuente */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap");
+
+
+card-text {
+  font-family: Roboto Condensed, Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,80 +41,91 @@
 }
 
 .card:hover h2.card-text {
-  color: grey; /* Cambia el color de texto al pasar el cursor sobre la tarjeta */
+  color: grey;
+  /* Cambia el color de texto al pasar el cursor sobre la tarjeta */
 }
 
-  .categoria{
-    color: red;
-  }
+.reportero {
+  color: #000 !important;
+  font-family: Roboto Condensed, Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
 
-  .card {
-    border: none; /* Elimina los bordes de la tarjeta */
-  }
+.categoria {
+  color: #ab2e2e !important;
+  font-family: Roboto Condensed, Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
 
-  .color-dif{
-    background-color: rgb(219, 218, 209);
-  }
+.card {
+  border: none;
+  /* Elimina los bordes de la tarjeta */
+}
 
-  /* Estilo base para los botones sociales */
-  .social-button {
-    display: inline-block;
-    margin: 10px;
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: #ffffff; /* Color de fondo del botón */
-  }
+.color-dif {
+  background-color: rgb(219, 218, 209);
+}
 
-  /* Estilo para las imágenes dentro de los botones */
-  .social-button img {
-    width: 50px;
-    height: 50px;
-    display: block;
-  }
+/* Estilo base para los botones sociales */
+.social-button {
+  display: inline-block;
+  margin: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ffffff;
+  /* Color de fondo del botón */
+}
 
-  /* Estilo para el enlace dentro de los botones */
-  .social-button a {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
+/* Estilo para las imágenes dentro de los botones */
+.social-button img {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
 
-  /* Estilo para el contenedor de botones sociales */
-  .social-buttons {
-    text-align: center;
-  }
+/* Estilo para el enlace dentro de los botones */
+.social-button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
- .div-ul {
-    background-color: #F7F7F7;
+/* Estilo para el contenedor de botones sociales */
+.social-buttons {
+  text-align: center;
+}
+
+.div-ul {
+  background-color: #F7F7F7;
 }
 
 .mi-ul {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    background-attachment: scroll;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  background-attachment: scroll;
 }
 
 .mi-ul li {
-    list-style: none;
-    text-align: center;
-    margin: 0, 5px;
+  list-style: none;
+  text-align: center;
+  margin: 0, 5px;
 }
 
 .mi-ul li a {
-    text-decoration: none;
-    color: #666;
-    font-size: 12px;
+  text-decoration: none;
+  color: #666;
+  font-size: 12px;
 }
 
 .mi-ul li::after {
-    content: " / ";
-    padding: 0;
+  content: " / ";
+  padding: 0;
 }
 
 .mi-ul li:first-child::after,
 .mi-ul li:last-child::after {
-    content: "";
+  content: "";
 }
 
 .marca-logo {
@@ -114,34 +137,58 @@
   max-width: 80px;
 }
 
-#adlateral1{
+#adlateral1 {
   display: block;
   position: fixed;
   width: 160px;
   height: 600px;
   top: 180px;
   left: 0px;
-  border:1px solid #eee;
+  border: 1px solid #eee;
   z-index: 99;
 }
-#adlateral2{
-display: block;
+
+#adlateral2 {
+  display: block;
   position: fixed;
   width: 160px;
   height: 600px;
   top: 180px;
   right: 0px;
-  border:1px solid #eee;
+  border: 1px solid #eee;
   z-index: 99;
 }
 
 @media only screen and (max-width: 1490px) {
   #adlateral1 {
-      display:none!important;
+    display: none !important;
   }
+
+  #adlateral2 {
+    display: none !important;
+  }
+}
+
+#adlateral1 {
+  display: block;
+  position: fixed;
+  width: 160px;
+  height: 600px;
+  top: 180px;
+  left: 0px;
+  border: 1px solid #eee;
+  z-index: 99;
+}
+
 #adlateral2 {
-      display:none!important;
-  }
+  display: block;
+  position: fixed;
+  width: 120px;
+  height: 600px;
+  top: 180px;
+  right: 0px;
+  border: 1px solid #eee;
+  z-index: 99;
 }
 
 .small {
@@ -149,56 +196,55 @@ display: block;
 }
 
 .navbar-toggler {
-    pointer-events: none; /* Desactiva los clics en el botón */
-  }
-  
-  /* Mostrar el menú desplegable en hover */
-  .navbar-nav .nav-item:hover .nav-link {
-    background-color: black;
-    color: white;
-  }
-  
-  .navbar-nav .nav-item .nav-link {
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Estilos para el menú desplegable */
-  .navbar-nav .nav-item .dropdown-menu {
-    display: none; /* Ocultar el menú desplegable por defecto */
-    position: absolute;
-    background-color: #fff;
-  }
-  
-  .navbar-nav .nav-item:hover .dropdown-menu {
-    display: block;
-  }
+  pointer-events: none;
+}
+
+/* Mostrar el menú desplegable en hover */
+.navbar-nav .nav-item:hover .nav-link {
+  background-color: black;
+  color: white;
+}
+
+.navbar-nav .nav-item .nav-link {
+  transition: background-color 0.3s ease;
+}
+
+/* Estilos para el menú desplegable */
+.navbar-nav .nav-item .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+}
+
+.navbar-nav .nav-item:hover .dropdown-menu {
+  display: block;
+}
 
 .custom-flag {
-    display: flex;
-    align-items: center;
-    padding: 5px 4px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 5px 4px;
+  cursor: pointer;
 }
-  
+
 .flag-icon {
-  background-image: url('./images/mexico.png'); /* Ruta de tu imagen de bandera de México */
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left center;
-    width: 30px;
-    height: 20px;
-    margin-right: 1px;
+  background-image: url('./images/mexico.png');
+  /* Ruta de tu imagen de bandera de México */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  width: 30px;
+  height: 20px;
+  margin-right: 1px;
 }
-  
-  /* Desactivar el hover en el botón "MX" */
-.mx-button .btn:focus, .mx-button .btn:hover {
+
+/* Desactivar el hover en el botón "MX" */
+.mx-button .btn:focus,
+.mx-button .btn:hover {
   background-color: transparent;
   color: inherit;
 }
 
-
-
-/* Cambiar el estilo de fondo y color de texto en hover para el botón "Iniciar sesión" */
 .login-button .btn:hover {
   background-color: black;
   border: 2px solid black;
@@ -217,30 +263,28 @@ display: block;
 
 .custom-carousel-btn span.carousel-control-prev-icon,
 .custom-carousel-btn span.carousel-control-next-icon {
-  background-color: transparent; /* Para eliminar el fondo gris original */
-  color: white; /* Cambiar el color del icono (flecha) a blanco */
+  background-color: transparent;
+  color: white;
 }
 
 /* Estilos personalizados para el carrusel */
 .custom-carousel {
-  max-width: 70%; /* Ajusta el ancho del carrusel según tu preferencia */
-  margin: 0 auto; /* Centra el carrusel en su contenedor */
+  max-width: 70%;
+  margin: 0 auto;
 }
 
 /* Estilos personalizados para las imágenes dentro del carrusel */
 .custom-img {
-  max-width: 100%; /* Ajusta el ancho máximo de las imágenes al tamaño deseado */
-  height: auto; /* Mantén la proporción de aspecto */
+  max-width: 100%;
+  height: auto;
 }
 
 /* Estilos para el contenedor del anuncio */
-
 .navbar-nav .nav-item:hover a.nav-link {
   font-size: 18px;
   background-color: #191c24;
   color: white;
 }
-
 
 /* Restaurar estilos al hacer hover en otros elementos */
 .navbar-nav .nav-item:not(:hover) a.nav-link {
@@ -251,15 +295,15 @@ display: block;
 
 /* Estilos para el menú desplegable */
 .navbar-nav .nav-item .dropdown-menu {
-  display: none; /* Ocultar el menú desplegable por defecto */
+  display: none;
   position: absolute;
   background-color: rgba(20, 29, 37, .97);
-  width: 1200px; /* Ancho personalizado */
-  height: 600px; /* Alto personalizado */
-  padding: 20px; /* Espaciado personalizado */
-  position: fixed; /* Mantener fijo el menú desplegable */
-  left: 9%; /* Alinea el menú a la izquierda */
-  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  width: 1200px;
+  height: 600px;
+  padding: 20px;
+  position: fixed;
+  left: 9%;
+  z-index: 1000;
 }
 
 /* Mostrar el menú desplegable en hover */
@@ -275,7 +319,9 @@ display: block;
   margin-bottom: 10px;
 }
 
-.tab-list-content, .tab-list-content ul, .tab-list-content ul li {
+.tab-list-content,
+.tab-list-content ul,
+.tab-list-content ul li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -294,7 +340,8 @@ display: block;
   margin-bottom: 3px;
 }
 
-.tab-list li a:hover, .tab-list li ul li a:hover {
+.tab-list li a:hover,
+.tab-list li ul li a:hover {
   color: red !important;
   background-color: transparent;
 }
@@ -304,7 +351,7 @@ display: block;
 }
 
 .tab-list-horizontal {
-  display: flex !important; 
+  display: flex !important;
   flex-direction: row !important;
 }
 
@@ -322,70 +369,66 @@ ul li:last-child a.ultimo::after {
   content: "";
 }
 
-
-
 /* Estilo para el contenedor de la barra de iconos */
 .icons-bar {
-  text-align:center;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Agrega un scroll horizontal */
   background-color: rgba(70, 70, 70, 0.070);
-  /* Ajusta el tamaño del fondo para contener el contenido */
   background-repeat: no-repeat;
-  /* Evita que el fondo se repita */
+  overflow-x: auto;
 }
 
 /* Estilo para la lista de íconos */
 .icons-list {
   list-style: none;
-  /* Elimina los puntos de la lista */
   white-space: nowrap;
-  /* Evita el salto de línea */
 }
 
 /* Estilo para cada elemento de la lista */
 .icons-list li {
   display: inline-block;
-  /* Muestra los elementos de lista en línea */
   margin-right: 5px;
-  /* Espacio entre cada ícono */
 }
 
 /* Estilo para la fila de íconos */
 .icons-row {
   display: flex;
-  justify-content:center;
-  /* Alinea los íconos en el centro */
+  justify-content: center;
   align-items: center;
-  /* Centra verticalmente dentro de la fila */
 }
 
 /* Estilo para la imagen dentro de cada ícono */
 .icons img {
   width: 35px;
-  /* Tamaño de la imagen */
   height: 35px;
+}
+
+.icons-small img {
+  width: 25px;
+}
+
+.icons img:hover, .icons-small img:hover {
+  transform: scale(1.1);
 }
 
 /* Aplica el estilo al elemento principal */
 li.main-tab-highlight {
   background-color: #af0000 !important;
   transform: skewX(-10deg);
-  display: inline-flex; /* Utiliza flexbox para centrar y alinear contenido */
-  align-items: center; /* Centra verticalmente el contenido */
-  padding: 0 10px; /* Ajusta el espacio interno */
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px;
 }
 
 /* Establece un margen izquierdo para el primer elemento */
 li.main-tab-highlight:nth-child(1) {
-  margin-left: -10px; /* Ajusta este valor según sea necesario */
+  margin-left: -10px;
 }
 
-/* Establece un margen derecho para el segundo elemento */
 li.main-tab-highlight:nth-child(2) {
-  margin-right: -10px; /* Ajusta este valor según sea necesario */
+  margin-right: -10px;
 }
 
 /* Agrega un separador "/" antes del segundo elemento */
@@ -396,18 +439,15 @@ li.main-tab-highlight ul.highlight-list li:nth-child(2)::before {
   padding: 0 10px 0 12px;
 }
 
-/* Estilo al pasar el ratón por encima */
 li.main-tab-highlight ul.highlight-list li:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
 li.nav-item a.btn-mas {
-  /* Alinear al centro del div principal */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Ajustar el tamaño del botón */
   width: 100%;
   height: 100%;
   gap: 5px;
@@ -436,8 +476,8 @@ li.nav-item a.btn-mas {
 }
 
 .scroll-navbar .logo img {
-  max-width: 100px; 
-  height: auto; 
+  max-width: 100px;
+  height: auto;
 }
 
 .scroll-navbar .portada {
@@ -446,16 +486,37 @@ li.nav-item a.btn-mas {
 }
 
 .scroll-navbar #progress-bar {
-  height: 4px; /* Altura de la barra de progreso */
-  background-color: #af0000; /* Color de la barra de progreso */
-  width: 0; /* Ancho inicial de la barra de progreso */
+  height: 4px;
+  background-color: #af0000;
+  width: 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  transition: width 0.5s; /* Animación de la barra de progreso */
+  transition: width 0.5s;
 }
 
 .scroll-navbar.show {
   top: 0;
   opacity: 1;
 }
+
+.no-border {
+  border: none !important;
+}
+
+.close-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.close-button:hover {
+  color: #af0000;
+}
+
