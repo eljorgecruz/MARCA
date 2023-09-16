@@ -76,51 +76,56 @@
       <div class="progress-bar" id="progress-bar"></div>
     </div>
 
-   <div class="container">
-  <!-- Container principal Logos y Botones -->
-  <div class="d-flex justify-content-between align-items-center">
-    <!-- Container Logos -->
-    <div class="d-none d-xxl-block">
-      <div class="d-flex gap-3 align-items-center">
-        <!-- Radio MARCA Logo -->
-        <div> 
-          <img class="logo-pequeño" src="/images/radio-marca.png" alt="RadioMarca Logo">
-          <strong class="small">Radio MARCA</strong>
+    <div class="container">
+      <!-- Container principal Logos y Botones -->
+      <div class="d-flex justify-content-between align-items-center">
+        <!-- Container Logos -->
+        <div class="d-none d-xxl-block">
+          <div class="d-flex gap-3 align-items-center">
+            <!-- Radio MARCA Logo -->
+            <div>
+              <img class="logo-pequeño" src="/images/radio-marca.png"
+                alt="RadioMarca Logo">
+              <strong class="small">Radio MARCA</strong>
+            </div>
+            <!-- CuidatePlus Logo -->
+            <div>
+              <img class="logo-pequeño" src="/images/favicon_0_0.ico"
+                alt="CuidatePlus Logo">
+              <strong class="small">CuidatePlus</strong>
+            </div>
+          </div>
         </div>
-        <!-- CuidatePlus Logo -->
-        <div> 
-          <img class="logo-pequeño" src="/images/favicon_0_0.ico" alt="CuidatePlus Logo">
-          <strong class="small">CuidatePlus</strong>
+
+        <!-- Logo Principal -->
+        <div class="text-center">
+          <a href="#">
+            <img class="marca-logo" src="/images/Marca_logo_logotype.png"
+              alt="Marca Logo">
+          </a>
+        </div>
+
+        <!-- Botones a la Derecha -->
+        <div class="d-flex gap-2">
+          <div class="dropdown mx-button">
+            <button
+              class="btn btn-outline-secondary dropdown-toggle custom-flag"
+              type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="flag-icon"></span>
+              <span>MX</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">ES - España</a></li>
+              <li><a class="dropdown-item" href="#">US - Estados Unidos</a></li>
+              <li><a class="dropdown-item" href="#">CA - Canadá</a></li>
+            </ul>
+          </div>
+          <div class="login-button">
+            <button class="btn btn-outline-danger">Iniciar sesión</button>
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- Logo Principal -->
-    <div class="text-center">
-      <a href="#">
-        <img class="marca-logo" src="/images/Marca_logo_logotype.png" alt="Marca Logo">
-      </a>
-    </div>
-
-    <!-- Botones a la Derecha -->
-    <div class="d-flex gap-2">
-      <div class="dropdown mx-button">
-        <button class="btn btn-outline-secondary dropdown-toggle custom-flag" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <span class="flag-icon"></span>
-          <span>MX</span>
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">ES - España</a></li>
-          <li><a class="dropdown-item" href="#">US - Estados Unidos</a></li>
-          <li><a class="dropdown-item" href="#">CA - Canadá</a></li>
-        </ul>
-      </div>
-      <div class="login-button">
-        <button class="btn btn-outline-danger">Iniciar sesión</button>
-      </div>
-    </div>
-  </div>
-</div>
 
     <!-- Main Navbar -->
     <nav class="navbar navbar-expand-lg main-navbar text-white"
@@ -613,7 +618,7 @@
           <li>
             <a
               href="https://www.marca.com/mx/futbol/club-leon.html?intcmp=MENUESCU&s_kw=leon">
-              <div class="icons">
+              <div class="icons-small">
                 <img src="/images/logo-equipos/leon.png"
                   title="Noticias sobre Leon">
               </div>
@@ -640,7 +645,7 @@
           <li>
             <a
               href="https://www.marca.com/mx/futbol/necaxa.html?intcmp=MENUESCU&s_kw=necaxa">
-              <div class="icons">
+              <div class="icons-small">
                 <img src="/images/logo-equipos/necaxa.png"
                   title="Noticias sobre el Necaxa">
               </div>
@@ -676,7 +681,7 @@
           <li>
             <a
               href="https://www.marca.com/mx/futbol/queretaro.html?intcmp=MENUESCU&s_kw=queretaro">
-              <div class="icons">
+              <div class="icons-small">
                 <img src="/images/logo-equipos/queretaro.png"
                   title="Noticias sobre Queretaro">
               </div>
@@ -694,7 +699,7 @@
           <li>
             <a
               href="https://www.marca.com/mx/futbol/tigres-UANL.html?intcmp=MENUESCU&s_kw=tigres">
-              <div class="icons">
+              <div class="icons-small">
                 <img src="/images/logo-equipos/tigres.png"
                   title="Noticias sobre los Tigres">
               </div>
@@ -713,7 +718,7 @@
             <a
               href="https://www.marca.com/mx/futbol/deportivo-toluca.html?intcmp=MENUESCU&s_kw=toluca">
               <div class="icons">
-                <img src="/images/logo-equipos/toluca.jpg"
+                <img src="./images/logo-equipos/toluca.png"
                   title="Noticias sobre Toluca">
               </div>
             </a>
@@ -729,59 +734,73 @@
           src="https://www.marketingsgm.es/wp-content/uploads/banner-adidas.jpg"
           alt>
       </div>
-
-      <!-- resultados partidos -->
-      <div class="border border-100px">
-        <div id="carouselExampleIndicators"
-          class="carousel slide custom-carousel" data-bs-ride="carousel">
-          <h3 class="text-center">Agenda</h3>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="d-flex justify-content-center">
-                <div class="col-md-3 text-center">
-                  <img src="images/resultado1.png"
-                    class="d-block mx-auto custom-img" alt="...">
-                </div>
-                <div class="col-md-3 text-center">
-                  <img src="images/resultado2.png"
-                    class="d-block mx-auto custom-img" alt="...">
-                </div>
-                <div class="col-md-3 text-center">
-                  <img src="images/resultado3.png"
-                    class="d-block mx-auto custom-img" alt="...">
-                </div>
-                <div class="col-md-3 text-center">
-                  <img src="images/resultado4.png"
-                    class="d-block mx-auto custom-img" alt="...">
-                </div>
+    </div>
+    <!-- resultados partidos -->
+    <div class="border border-100px mt-2">
+      <div id="carouselExampleIndicators"
+        class="carousel slide custom-carousel" data-bs-ride="carousel">
+        <h3 class="text-center">Agenda</h3>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <div class="col-md-3 text-center">
+                <img src="images/par1.png"
+                  class="d-block mx-auto custom-img" alt="...">
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center">
-                <div class="col-md-3 text-center">
-                  <img src="images/resultado5.png"
-                    class="d-block mx-auto custom-img" alt="...">
-                </div>
-                <!-- Puedes agregar más imágenes aquí -->
+              <div class="col-md-3 text-center">
+                <img src="images/par2.png"
+                  class="d-block mx-auto custom-img" alt="...">
+              </div>
+              <div class="col-md-3 text-center">
+                <img src="images/par3.png"
+                  class="d-block mx-auto custom-img" alt="...">
+              </div>
+              <div class="col-md-3 text-center">
+                <img src="images/par4.png"
+                  class="d-block mx-auto custom-img" alt="...">
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button"
-            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"
-              style="background-color: rgb(22, 47, 234);"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button"
-            data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"
-              style="background-color: rgb(22, 47, 234);"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="col-md-3 text-center">
+                <img src="images/par5.png"
+                  class="d-block mx-auto custom-img" alt="...">
+              </div>
+              <!-- Puedes agregar más imágenes aquí -->
+              <div class="col-md-3 text-center">
+                <img src="images/par6.png"
+                  class="d-block mx-auto custom-img" alt="...">
+              </div>
+              <div class="col-md-3 text-center">
+                <img src="images/par7.png"
+                  class="d-block mx-auto custom-img" alt="...">
+              </div>
+              <div class="col-md-3 text-center">
+                <img src="images/par8.png"
+                  class="d-block mx-auto custom-img" alt="...">
+              </div>
+            </div>
+          </div>
         </div>
+        <button class="carousel-control-prev justify-content-start"
+          type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"
+            style="background-color: rgb(22, 47, 234);"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next justify-content-end"
+          type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="false"
+            style="background-color: rgb(22, 47, 234);"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+    </div>
       <!-- clase gutter -->
-      <div class="row">
+      <div class="row mt-3">
         <div class="col-md-8">
           <!-- Tarjeta Izquierda -->
           <div class="card mb-4">
@@ -821,7 +840,6 @@
         </div>
       </div>
       <hr>
-
       <!-- segunda seccion -->
       <div class="container">
         <div class="row">
@@ -872,7 +890,6 @@
           </div>
         </div>
       </div>
-
       <!-- Tercera seccion -->
       <hr>
       <div class="row g-0">
@@ -982,70 +999,58 @@
             alt>
         </div>
       </div>
-
-      <!-- <div id="adlateral1">
-      Publicidad
-      <img src="https://www.ims360group.com/wp-content/uploads/2020/02/160_x_600-1.gif" alt="">
+      <!-- publidad de los laterales -->
+      <div id="adlateral1" class="ad-lateral">
+        <img src="https://www.ims360group.com/wp-content/uploads/2020/02/160_x_600-1.gif" alt="Publicidad Lateral">
+        <!-- Botón de cierre (X) con icono -->
+        <button class="close-button" onclick="closeAdlateral1()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>      
     </div>
-    <div id="adlateral2">
-      Publicidad
-      <img src="https://www.ims360group.com/wp-content/uploads/2020/02/160_x_600-1.gif" alt="">
-    </div> -->
-    
-      <!-- footer -->
-      <footer class="py-3 my-4 bg-light text-center">
-        <span>© Septiembre 2023 Unidad Editorial Información Deportiva, S.L.U.
-          Todos los derechos reservados.</span>
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <!-- Tus elementos nav -->
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Politica
-              de cookies</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Configuracion
-              de cookies</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Politica
-              de privacidad</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Terminos
-              y condiciones de uso</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Certificado
-              por OJD</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Publicidad</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Ayuda</a></li>
-        </ul>
-
-        <h3>Síguenos en redes sociales</h3>
-
-        <a class="btn btn-lg btn-floating mx-2 rounded-circle"
-          style="background-color: gray;" href="#!" role="button">
-          <i class="fab fa-facebook-f" style="color: #3b5998;"></i>
-        </a>
-        <a class="btn btn-lg btn-floating mx-2 rounded-circle"
-          style="background-color: #ac2bac;" href="#!" role="button">
-          <i class="fab fa-twitter" style="color: #55acee;"></i>
-        </a>
-        <a class="btn btn-lg btn-floating mx-2 rounded-circle"
-          style="background-color: #ac2bac;" href="#!" role="button">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </footer>
-
-      
-
-      <!-- Optional JavaScript; choose one of the two! -->
-
-      <!-- Option 1: Bootstrap Bundle with Popper -->
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-      <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-
-      <!-- Option 2: Separate Popper and Bootstrap JS -->
-      <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-    </body>
-  </html>
+    <!-- footer -->
+    <footer class="py-3 my-4 bg-light text-center">
+      <span>© Septiembre 2023 Unidad Editorial Información Deportiva, S.L.U.
+        Todos los derechos reservados.</span>
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <!-- Tus elementos nav -->
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">Politica de cookies</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-muted">Configuracion de
+            cookies</a>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Politica
+            de privacidad</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Terminos
+            y condiciones de uso</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Certificado
+            por OJD</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Publicidad</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Ayuda</a></li>
+      </ul>
+      <h3>Síguenos en redes sociales</h3>
+      <a class="btn btn-primary btn-lg btn-floating rounded-circle no-border"
+        style="background-color: #ac2bac;" href="#!" role="button">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a class="btn btn-primary btn-lg btn-floating rounded-circle no-border"
+        style="background-color: #55acee;" href="#!" role="button">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="btn btn-primary btn-lg btn-floating rounded-circle no-border"
+        style="background-color: #3b5998;" href="#!" role="button">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  </body>
+</html>

@@ -18,10 +18,14 @@ window.addEventListener('scroll', function() {
       const originalNavbar = document.querySelector('.navbar-original');
       originalNavbar.style.visibility = 'visible';
     }
-  });
+});
   
-  window.addEventListener('load', function() {
-    const originalNavbar = document.querySelector('.navbar-original');
-    originalNavbar.style.visibility = 'visible';
-  });
+// Función para cerrar la publicidad lateral 1
+function closeAdlateral1() {
+    const adlateral1 = document.getElementById('adlateral1');
+    adlateral1.style.display = 'none';
+  }
+  
+  
+  
   
